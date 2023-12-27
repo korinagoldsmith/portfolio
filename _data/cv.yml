@@ -16,11 +16,11 @@
       year: 2027
       description:
         - Focus on information internetworks and artificial intelligence
-        - Relevant Coursework: Object-Oriented Programming, Web Development, Cybersecurity, and Data Science
-        # - title: Description 3.
-        #   contents:
-        #     - Sub-description 1.
-        #     - Sub-description 2.
+        - title: Relevant Coursework
+          contents:
+            - Object-Oriented Programming
+            - Web Development
+            - Cybersecurity
     - title: High School Diploma, Highest Distinction
       institution: Hempfield Area Senior High School, Greensburg, Pennsylvania
       year: 2023
