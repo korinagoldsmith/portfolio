@@ -124,7 +124,7 @@ blog_nav_title: #blog # your blog must have a title for it to be displayed in th
 blog_description: a glimpse into the world from my point of view
 permalink: /blog/:year/:title/
 
-Pagination
+#Pagination
 pagination:
   enabled: true
 
