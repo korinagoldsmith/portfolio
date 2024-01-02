@@ -1,0 +1,110 @@
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Korina Z. Goldsmith
+    - name: Date of Birth
+      value: 2nd November 2005
+    - name: Languages
+      value: English, Mandarin, French
+
+- title: Education
+  type: time_table
+  contents:
+    - title: B.S. Computer Science
+      institution: Georgia Institute of Technology, Atlanta, Georgia
+      year: 2027
+      description:
+        - Focus on information internetworks and artificial intelligence
+        - title: Relevant Coursework
+          contents:
+            - Object-Oriented Programming
+            - Web Development
+            - Cybersecurity
+    - title: High School Diploma, Highest Distinction
+      institution: Hempfield Area Senior High School, Greensburg, Pennsylvania
+      year: 2023
+      description:
+        - Scholar in the prestigious Pennsylvania Governor's School of the Sciences program (1 of 70 selected students statewide) - paper published in PGSS Journal
+        - Scholar in the Pittsburgh Health Career Scholars Academy - independent research on osteoporosis
+        - Vice-President of Future Business Leaders of America club and Treasurer of Science National Honor Society
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Technical Intern
+      institution: Westmoreland Mechanical Testing and Research
+      year: 2023
+      description:
+        - Performed C, H, N, O, S testing on various titanium and steel materials using LECO machines
+        - Metallography experience with SEM microscopy, hardness testing, grain size, and microstructure
+        - Used experience and knowledge gained during internship to revise and improve 3 company lab procedures
+
+    - title: Founder of Non-Profit Organization
+      institution: Meet Your Neighbors
+      year: 2021 - 2023
+      description:
+        - Promoted cultural acceptance by pairing up members of diverse backgrounds worldwide to gain a better understanding of other people through written letters, emails, and video calls.
+        - Planned and hosted events and service projects for over 100 members across 5 continents to promote diversity.
+        - Led meetings for a team of 20 recruited individuals.
+        - Managed website, social media, and outreach, including sponsorships from Hershey and ACEI.
+
+    - title: Business CEO
+      institution: Online Etsy Business
+      year: 2020 - Present
+      description:
+        - Responsible for full business management including cost analysis, inventory, marketing, production, and customer service.
+        - Earned bestseller title and numerous 5 star reviews.
+
+
+    - title: HackGT participant
+      institution: Georgia Institute of Technology
+      year: 2023
+      description:
+        - Built and presented a dancing robot using Arduino hardware and software
+
+    - title: RoboCup software team member
+      institution: RoboJackets at Georgia tech
+      year: 2023 - present
+      description:
+        - Contribute to software stack for soccer-playing robots
+
+    - title: Tikkun Olam Makers
+      institution: TOM at Georgia Tech
+      year: 2023 - present
+      description:
+       - Working on creating affordable solutions to neglected challenges of people with disabilities
+
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items: 
+        - President Volunteer Service Award
+    # - year: 2029
+    #   items: 
+    #     - Max Planck Medal
+
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
