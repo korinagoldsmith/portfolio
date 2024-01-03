@@ -17,7 +17,7 @@
       description:
         - Focus on information internetworks and artificial intelligence
         - title: Relevant Coursework
-          items:
+          contents:
             - Object-Oriented Programming
             - Web Development
             - Cybersecurity
