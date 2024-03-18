@@ -2,7 +2,7 @@
 layout: post
 title:  TOM build party
 date: 2024-03-24
-# description: 
+description: 
 # categories: sample-posts
 thumbnail: assets/img/tomteam.JPG
 ---
