@@ -39,3 +39,8 @@ EXPOSE 8080
 COPY bin/entry_point.sh /tmp/entry_point.sh
 
 CMD ["/tmp/entry_point.sh"]
+
+FROM ruby:3.0.3
+RUN gem install bundler --version=2.3.5
+COPY Gemfile Gemfile.lock ./
+RUN bundle install
