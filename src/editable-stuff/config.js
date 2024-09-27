@@ -46,7 +46,7 @@ const about = {
   imageLink: require("../editable-stuff/hashirshoaeb.png"),
   imageSize: 375,
   message:
-    "Hey! I'm Korina, a junior computer science student at Georgia Tech with a passion for business, sustainability, and artificial intelligence. On campus, I'm part of XAI and HCAI research, a team creating a virtual twin for a sustainable bottling plant in the Bahamas, and I'm a program facilitator for the Grand Challenges leadership program. Additionally, I enjoy creating my own projects and working on startups. Check out my blog posts, projects, and GitHub for my latest work! Outside of academics, I enjoy snowboarding, reading, listening to music, and traveling.",
+    "Hey! I'm Korina, a junior computer science student at Georgia Tech with a passion for business, sustainability, and artificial intelligence. Additionally, I enjoy creating my own projects and working on startups. Outside of academics, I enjoy snowboarding, reading, listening to music, and traveling.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
