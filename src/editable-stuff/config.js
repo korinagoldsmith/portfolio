@@ -6,30 +6,22 @@ const navBar = {
 // Main Body SECTION
 const mainBody = {
   gradientColors: "#4484ce, #1ad7c0, #ff9b11, #9b59b6, #ff7f7f, #ecf0f1",
-  firstName: "Hashir",
+  firstName: "Korina",
   middleName: "",
-  lastName: "Shoaib",
-  message: " Passionate about changing the world with technology. ",
+  lastName: "Goldsmith",
+  message: "Full stack developer using technology to make positive impacts.",
   icons: [
     {
       image: "fa-github",
-      url: "https://github.com/hashirshoaeb",
-    },
-    {
-      image: "fa-facebook",
-      url: "https://www.facebook.com/hashirshoaeb",
+      url: "https://github.com/korinagoldsmith",
     },
     {
       image: "fa-instagram",
-      url: "https://www.instagram.com/hashirshoaeb/",
+      url: "https://www.instagram.com/korinagoldsmith/",
     },
     {
       image: "fa-linkedin",
-      url: "https://www.linkedin.com/in/hashirshoaeb/",
-    },
-    {
-      image: "fa-twitter",
-      url: "https://www.twitter.com/hashirshoaeb/",
+      url: "https://www.linkedin.com/in/korinagoldsmith/",
     },
   ],
 };
@@ -54,7 +46,7 @@ const about = {
   imageLink: require("../editable-stuff/hashirshoaeb.png"),
   imageSize: 375,
   message:
-    "My name is Hashir Shoaib. I’m a graduate of 2020 from National University of Sciences and Technology at Islamabad with a degree in Computer Engineering. I'm most passionate about giving back to the community, and my goal is to pursue this passion within the field of software engineering. In my free time I like working on open source projects.",
+    "Hey! I'm Korina, a junior computer science student at Georgia Tech with a passion for business, sustainability, and artificial intelligence. On campus, I'm part of research involving XAI and HCAI with [Dr. Kim](https://faculty.cc.gatech.edu/~jkim693/), a team creating a virtual twin for a sustainable bottling plant in the [Bahamas](https://sites.gatech.edu/i2ce/team-2/), and I'm a program facilitator for the [Grand Challenges](https://grandchallenges.gatech.edu/) leadership program. Additionally, I enjoy creating my own projects and working on startups. Check out my blog posts, projects, and GitHub for my latest work! Outside of academics, I enjoy snowboarding, reading, listening to music, and traveling.",
   resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
 };
 
@@ -66,9 +58,9 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "hashirshoaeb", //i.e."johnDoe12Gh"
-  reposLength: 4,
-  specificRepos: [],
+  gitHubUsername: "korinagoldsmith", //i.e."johnDoe12Gh"
+  reposLength: 3,
+  specificRepos: ["spotify"],
 };
 
 // Leadership SECTION
