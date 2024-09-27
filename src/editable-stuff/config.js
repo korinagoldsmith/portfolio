@@ -46,7 +46,7 @@ const about = {
   imageLink: require("../editable-stuff/hashirshoaeb.png"),
   imageSize: 375,
   message:
-    "Hey! I'm Korina, a junior computer science student at Georgia Tech with a passion for business, sustainability, and artificial intelligence. On campus, I'm part of research involving XAI and HCAI with [Dr. Kim](https://faculty.cc.gatech.edu/~jkim693/), a team creating a virtual twin for a sustainable bottling plant in the [Bahamas](https://sites.gatech.edu/i2ce/team-2/), and I'm a program facilitator for the [Grand Challenges](https://grandchallenges.gatech.edu/) leadership program. Additionally, I enjoy creating my own projects and working on startups. Check out my blog posts, projects, and GitHub for my latest work! Outside of academics, I enjoy snowboarding, reading, listening to music, and traveling.",
+    "Hey! I'm Korina, a junior computer science student at Georgia Tech with a passion for business, sustainability, and artificial intelligence. On campus, I'm part of XAI and HCAI research, a team creating a virtual twin for a sustainable bottling plant in the Bahamas, and I'm a program facilitator for the Grand Challenges leadership program. Additionally, I enjoy creating my own projects and working on startups. Check out my blog posts, projects, and GitHub for my latest work! Outside of academics, I enjoy snowboarding, reading, listening to music, and traveling.",
   resume: require("../editable-stuff/resume.pdf"),
 };
 
@@ -58,9 +58,9 @@ const about = {
 const repos = {
   show: true,
   heading: "Recent Projects",
-  gitHubUsername: "korinagoldsmith", //i.e."johnDoe12Gh"
-  reposLength: 3,
-  specificRepos: ["spotify"],
+  gitHubUsername: "korinagoldsmith", 
+  reposLength: 2,
+  specificRepos: ["spotify", "korinagoldsmith.github.io"],
 };
 
 // Leadership SECTION
@@ -92,17 +92,24 @@ const skills = {
   show: true,
   heading: "Skills",
   languages: [
-    { name: "Python", value: require("../assets/img/logo_python.png") },
+    { name: "Java", value: require("../assets/img/logo_java.png") },
+    {name: "Python", value: require("../assets/img/logo_python.png")},
     { name: "JavaScript", value: require("../assets/img/logo_javascript.png") },
     { name: "HTML/CSS", value: require("../assets/img/logo_html.png") },
+    { name: "Ruby", value: require("../assets/img/logo_ruby.png") },
   ],
   librariesFrameworks: [
     { name: "React", value: require("../assets/img/logo_react.png") },
+    { name: "Django", value: require("../assets/img/logo_django.png")},
+    { name: "Streamlit", value: require("../assets/img/logo_streamlit.png")},
+    { name: "Jekyll", value: require("../assets/img/logo_jekyll.png")}
   ],
   otherSkills: [
     { name: "Git", value: require("../assets/img/logo_git.png") },
     { name: "Docker", value: require("../assets/img/logo_docker.png") },
     { name: "Figma", value: require("../assets/img/logo_figma.png") },
+    { name: "Arduino", value: require("../assets/img/logo_arduino.png")},
+    { name: "VS Code", value: require("../assets/img/logo_vscode.png")}
   ],
 };
 

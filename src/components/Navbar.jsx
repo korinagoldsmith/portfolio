@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
-import { Link } from 'react-router-dom';
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -59,10 +58,23 @@ const Navigation = React.forwardRef((props, ref) => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-nav mr-auto">
 
-        {(<NavLink
-        href={process.env.PUBLIC_URL + "/#blog"}>
-          Blog
-        </NavLink>)}
+        {about.show && (
+            <NavLink
+              className="nav-item lead"
+              href={process.env.PUBLIC_URL + "/#aboutme"}
+            >
+              About
+            </NavLink>
+          )}
+
+          <NavLink
+            className="nav-item lead"
+            href={about.resume}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Resume
+          </NavLink>
 
           {(<NavLink
             href={process.env.PUBLIC_URL + "/#experience"}>
@@ -77,22 +89,7 @@ const Navigation = React.forwardRef((props, ref) => {
               Projects
             </NavLink>
           )}
-          <NavLink
-            className="nav-item lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Resume
-          </NavLink>
-          {about.show && (
-            <NavLink
-              className="nav-item lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
-            >
-              About
-            </NavLink>
-          )}
+
           {skills.show && (
             <NavLink
               className="nav-item lead"
@@ -101,6 +98,12 @@ const Navigation = React.forwardRef((props, ref) => {
               Skills
             </NavLink>
           )}
+
+          {(<NavLink
+            href={process.env.PUBLIC_URL + "/#blog"}>
+            Blog
+          </NavLink>)}
+
         </Nav>
       </Navbar.Collapse>
     </Navbar>

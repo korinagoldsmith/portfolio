@@ -21,7 +21,6 @@ import { Blog } from "./components/blog/Blog.jsx";
 import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
 import Leadership from "./components/home/Leadership.jsx";
-import ProjectTimeline from "./editable-stuff/ProjectTimeline.jsx";
 import Experience from "./editable-stuff/Experience.jsx";
 
 const Home = React.forwardRef((props, ref) => {
