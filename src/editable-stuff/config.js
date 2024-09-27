@@ -59,7 +59,7 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "korinagoldsmith", 
-  reposLength: 2,
+  reposLength: 3,
   specificRepos: ["spotify", "korinagoldsmith.github.io"],
 };
 
@@ -141,7 +141,7 @@ const experiences = {
 
 // Blog SECTION
 const blog = {
-  show: true,
+  show: false,
   heading: "Blog",
 };
 
