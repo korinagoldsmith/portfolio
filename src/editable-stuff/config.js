@@ -91,18 +91,25 @@ const leadership = {
 const skills = {
   show: true,
   heading: "Skills",
-  languages: [
-    { name: "Python", value: require("../assets/img/logo_python.png") },
-    { name: "JavaScript", value: require("../assets/img/logo_javascript.png") },
-    { name: "HTML/CSS", value: require("../assets/img/logo_html.png") },
+  hardSkills: [
+    { name: "Python", value: 90 },
+    { name: "SQL", value: 75 },
+    { name: "Data Structures", value: 85 },
+    { name: "C/C++", value: 65 },
+    { name: "JavaScript", value: 90 },
+    { name: "React", value: 65 },
+    { name: "HTML/CSS", value: 55 },
+    { name: "C#", value: 80 },
   ],
-  librariesFrameworks: [
-    { name: "React", value: require("../assets/img/logo_react.png") },
-  ],
-  otherSkills: [
-    { name: "Git", value: require("../assets/img/logo_git.png") },
-    { name: "Docker", value: require("../assets/img/logo_docker.png") },
-    { name: "Figma", value: require("../assets/img/logo_figma.png") },
+  softSkills: [
+    { name: "Goal-Oriented", value: 80 },
+    { name: "Collaboration", value: 90 },
+    { name: "Positivity", value: 75 },
+    { name: "Adaptability", value: 85 },
+    { name: "Problem Solving", value: 75 },
+    { name: "Empathy", value: 90 },
+    { name: "Organization", value: 70 },
+    { name: "Creativity", value: 90 },
   ],
 };
 

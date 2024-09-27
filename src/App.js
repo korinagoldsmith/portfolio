@@ -73,7 +73,7 @@ const Home = React.forwardRef((props, ref) => {
       )}
       {blog.show && (
         <Blog
-        heading={blog.heading} /> // Ensure you're passing any required props to the Blog component
+        heading={blog.heading} />
       )}
 
     </>
