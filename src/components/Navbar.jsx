@@ -5,31 +5,45 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
+import { Link } from 'react-router-dom';
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
   const [isTop, setIsTop] = useState(true);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition] = useState(0);
   const navbarMenuRef = React.useRef();
   const navbarDimensions = useResizeObserver(navbarMenuRef);
   const navBottom = navbarDimensions ? navbarDimensions.bottom : 0;
   useScrollPosition(
-    ({ prevPos, currPos }) => {
-      if (!navbarDimensions) return;
-      currPos.y + ref.current.offsetTop - navbarDimensions.bottom > 5
-        ? setIsTop(true)
-        : setIsTop(false);
-      setScrollPosition(currPos.y);
+    ({ currPos }) => {
+      if (!navbarMenuRef.current) return; // Add null check here
+
+      // Toggle `isTop` based on scroll position
+      const navOffsetTop = navbarMenuRef.current.offsetTop;
+      if (currPos.y + navOffsetTop > 5) {
+        setIsTop(true);
+      } else {
+        setIsTop(false);
+      }
     },
-    [navBottom]
+    [navbarDimensions] // Trigger when dimensions change
   );
 
   React.useEffect(() => {
-    if (!navbarDimensions) return;
-    navBottom - scrollPosition >= ref.current.offsetTop
+  if (!navbarMenuRef.current || !navbarDimensions) return;
+
+  // Delay to ensure DOM has fully updated
+  const timer = setTimeout(() => {
+    const navOffsetTop = navbarMenuRef.current.offsetTop;
+    navBottom - scrollPosition >= navOffsetTop
       ? setIsTop(false)
       : setIsTop(true);
-  }, [navBottom, navbarDimensions, ref, scrollPosition]);
+  }, 0);
+
+  return () => clearTimeout(timer);
+}, [navBottom, navbarDimensions, navbarMenuRef, scrollPosition]);
+
+  
 
   return (
     <Navbar
@@ -44,11 +58,11 @@ const Navigation = React.forwardRef((props, ref) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-nav mr-auto">
-          {/* {
+          {
             <NavLink className="nav-item lead">
               <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
             </NavLink>
-          } */}
+          }
           {repos.show && (
 
             <NavLink

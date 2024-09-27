@@ -47,7 +47,7 @@ const about = {
   imageSize: 375,
   message:
     "Hey! I'm Korina, a junior computer science student at Georgia Tech with a passion for business, sustainability, and artificial intelligence. On campus, I'm part of research involving XAI and HCAI with [Dr. Kim](https://faculty.cc.gatech.edu/~jkim693/), a team creating a virtual twin for a sustainable bottling plant in the [Bahamas](https://sites.gatech.edu/i2ce/team-2/), and I'm a program facilitator for the [Grand Challenges](https://grandchallenges.gatech.edu/) leadership program. Additionally, I enjoy creating my own projects and working on startups. Check out my blog posts, projects, and GitHub for my latest work! Outside of academics, I enjoy snowboarding, reading, listening to music, and traveling.",
-  resume: "https://docs.google.com/document/d/13_PWdhThMr6roxb-UFiJj4YAFOj8e_bv3Vx9UHQdyBQ/edit?usp=sharing",
+  resume: require("../editable-stuff/resume.pdf"),
 };
 
 // PROJECTS SECTION
@@ -91,25 +91,18 @@ const leadership = {
 const skills = {
   show: true,
   heading: "Skills",
-  hardSkills: [
-    { name: "Python", value: 90 },
-    { name: "SQL", value: 75 },
-    { name: "Data Structures", value: 85 },
-    { name: "C/C++", value: 65 },
-    { name: "JavaScript", value: 90 },
-    { name: "React", value: 65 },
-    { name: "HTML/CSS", value: 55 },
-    { name: "C#", value: 80 },
+  languages: [
+    { name: "Python", value: require("../assets/img/logo_python.png") },
+    { name: "JavaScript", value: require("../assets/img/logo_javascript.png") },
+    { name: "HTML/CSS", value: require("../assets/img/logo_html.png") },
   ],
-  softSkills: [
-    { name: "Goal-Oriented", value: 80 },
-    { name: "Collaboration", value: 90 },
-    { name: "Positivity", value: 75 },
-    { name: "Adaptability", value: 85 },
-    { name: "Problem Solving", value: 75 },
-    { name: "Empathy", value: 90 },
-    { name: "Organization", value: 70 },
-    { name: "Creativity", value: 90 },
+  librariesFrameworks: [
+    { name: "React", value: require("../assets/img/logo_react.png") },
+  ],
+  otherSkills: [
+    { name: "Git", value: require("../assets/img/logo_git.png") },
+    { name: "Docker", value: require("../assets/img/logo_docker.png") },
+    { name: "Figma", value: require("../assets/img/logo_figma.png") },
   ],
 };
 
@@ -140,8 +133,9 @@ const experiences = {
 }
 
 // Blog SECTION
-// const blog = {
-//   show: false,
-// };
+const blog = {
+  show: true,
+  heading: "Blog",
+};
 
-export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences };
+export { navBar, mainBody, about, repos, skills, leadership, getInTouch, experiences, blog };
