@@ -58,11 +58,17 @@ const Navigation = React.forwardRef((props, ref) => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="navbar-nav mr-auto">
-          {
-            <NavLink className="nav-item lead">
-              <Link to={process.env.PUBLIC_URL + "/blog"}>Blog</Link>
-            </NavLink>
-          }
+
+        {(<NavLink
+        href={process.env.PUBLIC_URL + "/#blog"}>
+          Blog
+        </NavLink>)}
+
+          {(<NavLink
+            href={process.env.PUBLIC_URL + "/#experience"}>
+              Experience
+            </NavLink>)}
+          
           {repos.show && (
 
             <NavLink
