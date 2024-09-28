@@ -5,7 +5,7 @@
 
   <p align="center">
     Personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects. 
-    Built from [hashirshoaeb's template] (https://github.com/hashirshoaeb/home) with additional customizations.
+    Built from <a href = "https://github.com/hashirshoaeb/home"> hashirshoaeb's template</a> with additional customizations.
     <br/>
     <strong>Site URL » </strong> 
     <a href="https://korinagoldsmith.github.io/portfolio">korinagoldsmith.github.io/portfolio</a>
