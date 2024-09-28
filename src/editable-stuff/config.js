@@ -59,8 +59,8 @@ const repos = {
   show: true,
   heading: "Recent Projects",
   gitHubUsername: "korinagoldsmith", 
-  reposLength: 3,
-  specificRepos: ["spotify", "korinagoldsmith.github.io"],
+  reposLength: 4,
+  specificRepos: ["spotify"],
 };
 
 // Leadership SECTION
