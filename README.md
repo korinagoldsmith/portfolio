@@ -69,7 +69,7 @@
 
 # About the project
 
-[![Site preview](/public/social-image.png)](https://korinagoldsmith.github.io)
+[![Site preview](/public/preview.png)](https://korinagoldsmith.github.io)
 
 
 ## Technology stack 🛠️
