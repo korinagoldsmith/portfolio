@@ -60,7 +60,7 @@ const repos = {
   heading: "Recent Projects",
   gitHubUsername: "korinagoldsmith", 
   reposLength: 4,
-  specificRepos: ["spotify"],
+//  specificRepos: ["spotify"],
 };
 
 // Leadership SECTION
